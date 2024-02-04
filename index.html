@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess Bord</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="ps">
+        <div id="chessboard"></div>
+    </div>
+    
+    <script>
+      for (let i = 0; i < 8; i++) {
+        for (let j = 0; j < 8; j++) {
+          let chessbox = document.createElement("div");
+          chessbox.className = "chessbox";
+          if ((i + j) % 2 != 0) {
+            chessbox .style.backgroundColor="#000"
+          }
+          chessboard.appendChild(chessbox)
+        }
+      }
+    </script>
+  </body>
+</html>
